@@ -24,7 +24,7 @@
                 </div>
                 <div class="input-field">
                     <i class="fa-solid fa-weight-hanging"></i>
-                    <input type="number" id="weight" required>
+                    <input type="number" id="weight" step="0.01" required>
                     <span>
                         Kg
                     </span>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="input-field">
                     <i class="fa-solid fa-ruler"></i>
-                    <input type="number" id="height" required>
+                    <input type="number" id="height" step="0.01" required>
                     <span>
                         m
                     </span>
@@ -45,7 +45,7 @@
                     Calcular
                 </button>
             </form>
-            <div id="infos">
+            <div id="infos" class="hidden">
                 <div id="result">
                     <div id="bmi">
                         <span id="value"></span>
@@ -64,5 +64,6 @@
             </div>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
